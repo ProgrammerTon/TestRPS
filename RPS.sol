@@ -22,9 +22,7 @@ contract RPS {
         if (numPlayer > 0) {
             require(msg.sender != players[0]);
         }
-        bool allow = false;
-        require(allow == true);
-        require(msg.value == 1 ether);
+        require(msg.value == 0.000001 ether);
         reward += msg.value;
         players.push(msg.sender);
         numPlayer++;
