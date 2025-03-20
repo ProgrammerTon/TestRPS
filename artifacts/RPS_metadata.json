@@ -22,16 +22,10 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "bytes32",
-						"name": "commitHash",
-						"type": "bytes32"
-					}
-				],
+				"inputs": [],
 				"name": "addPlayer",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -205,11 +199,11 @@
 	},
 	"sources": {
 		"RPS.sol": {
-			"keccak256": "0xc2a7d7da35be2fade5fcf5c368a2eda088a9eddacdab717cee246d1c66b5ce64",
+			"keccak256": "0xba6ec0cd6422cd55523f3c566c9bab2152833aeedcb6ba4afbea2f8636d7000d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3711a8d3c48258f0b29d0153d54e9df70ec77dd7db62584c3a2275e456a36ed0",
-				"dweb:/ipfs/QmS4k8RZxSKBct1yxM6Jh3Gk4eQ4Y5QUbpPSFe7CWDowze"
+				"bzz-raw://f40429f09a40b6e89346a679a431a720a5aab33811269f755e9e2f793c14bebe",
+				"dweb:/ipfs/QmYSK6oUVf2MbpRyAuFaaxqk3Uc5u56Ep6Vi2KME1nFdxU"
 			]
 		}
 	},

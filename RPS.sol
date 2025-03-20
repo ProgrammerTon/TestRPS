@@ -17,18 +17,17 @@ contract RPS {
         timeUnit = TimeUnit(_timeUnit);
     }
 
-    function addPlayer(bytes32 commitHash) public {
-        require(numPlayer < 2, "Game is full");
+    function addPlayer() public payable {
+        require(numPlayer < 2);
         if (numPlayer > 0) {
-            require(msg.sender != players[0], "Player already registered");
+            require(msg.sender != players[0]);
         }
-        player_commit[msg.sender] = commitHash;
+        bool allow = false;
+        require(allow == true);
+        require(msg.value == 1 ether);
+        reward += msg.value;
         players.push(msg.sender);
         numPlayer++;
-        
-        if (numPlayer == 2) {
-            timeUnit.setStartTime();
-        }
     }
 
     function reveal(bytes32 choice) public {
